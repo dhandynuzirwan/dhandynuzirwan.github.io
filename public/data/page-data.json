@@ -32,43 +32,37 @@
     },
     "educationData": {
         "education": [{
-                "title": "Universitas Ahmad Dahlan / 2021 - 2025",
-                "description": "Department of Informatics, Faculty of Industrial Technology (GPA: 3.71/4.00)"
+                "title": { "en": "Universitas Ahmad Dahlan / 2021 - 2025", "id": "Universitas Ahmad Dahlan / 2021 - 2025" },
+                "description": { "en": "Department of Informatics, Faculty of Industrial Technology (GPA: 3.71/4.00)", "id": "Program Studi Informatika, Fakultas Teknologi Industri (IPK: 3.71/4.00)" }
             },
             {
-                "title": "MSIB Batch 6, RevoU / 2024",
-                "description": "Data Analytics & Software Engineering with AI"
+                "title": { "en": "MSIB Batch 6, RevoU / 2024", "id": "MSIB Angkatan 6, RevoU / 2024" },
+                "description": { "en": "Data Analytics & Software Engineering with AI", "id": "Analisis Data & Rekayasa Perangkat Lunak dengan AI" }
             }
         ],
         "skills": [{
-                "name": "Figma",
-                "icon": "/images/home/education-skill/figma-icon.svg",
-                "rating": 5
-            },
-            {
                 "name": "Laravel",
-                "icon": "/images/home/education-skill/laravel.svg",
-                "rating": 5
+                "icon": "/images/home/education-skill/laravel.svg"
             },
             {
-                "name": "Tailwind",
-                "icon": "/images/home/education-skill/tailwind.svg",
-                "rating": 4
+                "name": "React.js",
+                "icon": "/images/home/education-skill/react.svg"
             },
             {
-                "name": "ReactJS",
-                "icon": "/images/home/education-skill/react.svg",
-                "rating": 4
+                "name": "Next.js",
+                "icon": "/images/home/education-skill/nextjs-icon.svg"
             },
             {
-                "name": "Bootstrap",
-                "icon": "/images/home/education-skill/bootstraps.svg",
-                "rating": 5
+                "name": "Tailwind CSS",
+                "icon": "/images/home/education-skill/tailwind.svg"
             },
             {
-                "name": "Power BI",
-                "icon": "/images/home/education-skill/power-bi.svg",
-                "rating": 4
+                "name": "Vite",
+                "icon": "/images/home/education-skill/vite-icon.svg"
+            },
+            {
+                "name": "Figma",
+                "icon": "/images/home/education-skill/figma-icon.svg"
             }
         ]
     },

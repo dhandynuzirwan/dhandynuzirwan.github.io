@@ -1,90 +1,102 @@
+"use client";
+
 import { getImgPath } from "@/utils/image";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const AboutMe = () => {
+  const { dict, locale, setLocale } = useLanguage();
   return (
-    <section>
-      <div className="relative bg-softGray py-10 md:py-32">
-        <div className="absolute top-0 w-full px-9">
-          <Image
-            src={getImgPath("/images/home/about-me/resume-bg-img.svg")}
-            alt="resume-bg-img"
-            width={1200}
-            height={348}
-            className="w-full"
-          />
-        </div>
+    <section className="py-20 md:py-32 relative bg-slate-50 overflow-hidden print:py-8 print:bg-white">
+      {/* Decorative Blur */}
+      <div className="absolute top-1/2 -right-1/4 w-1/2 h-1/2 bg-primary/5 blur-[100px] rounded-full pointer-events-none" />
+      
+      <div className="container relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="flex items-end justify-between border-b border-slate-200 pb-6 mb-12 lg:mb-20"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900">{dict.about.title}</h2>
+          <p className="text-lg md:text-xl font-medium text-primary bg-primary/10 px-4 py-1 rounded-full">01</p>
+        </motion.div>
 
-        <div className="relative z-10">
-          <div className="container">
-            <div className="flex items-center justify-between gap-2 border-b border-black pb-7">
-              <h2>About Me</h2>
-              <p className="text-xl text-primary">( 01 )</p>
-            </div>
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7 }}
+            className="w-full max-w-sm lg:w-[400px] aspect-[3/4] relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/50 bg-white"
+          >
+            <Image
+              src={getImgPath("/images/home/about-me/wisuda.JPG")}
+              alt="About Dhandy"
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-700"
+            />
+            {/* Subtle overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none" />
+          </motion.div>
 
-            <div className="pt-10 xl:pt-16 flex gap-10 items-center justify-between">
-              <div className="w-[303px] h-[440px] hidden lg:flex">
-                <Image
-                  src={getImgPath("/images/home/about-me/about-banner-img.svg")}
-                  alt="about-banner"
-                  width={303}
-                  height={440}
-                  className="w-full h-full"
-                />
-              </div>
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="flex-1 w-full space-y-6"
+          >
+            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 relative overflow-hidden">
+              <div className="absolute -top-6 -left-2 text-8xl text-slate-100 font-serif pointer-events-none">"</div>
+              
+              <p className="text-slate-600 text-lg md:text-xl leading-relaxed relative z-10">
+                <strong className="text-slate-900 font-semibold">{dict.about.gradText}</strong> {dict.about.gradSub}
+              </p>
+              
+              <p className="text-slate-600 text-lg leading-relaxed mt-5">
+                {dict.about.desc1}
+              </p>
 
-              <div className="w-full lg:max-w-2xl flex-1 space-y-4">
-                <p>
-                  Graduate from Ahmad Dahlan University (GPA: 3.71 / 4.00) with a strong interest in UI/UX Design, Web Development, and User-Centered Design.
-                </p>
+              <p className="text-slate-600 text-lg leading-relaxed mt-5">
+                {dict.about.desc2}
+              </p>
 
-                <p>
-                  I have hands-on experience designing and developing intuitive digital interfaces using Figma, HTML, CSS, and Bootstrap, as well as conducting user research, wireframing, and prototyping. My background in both design and development enables me to create solutions that are not only visually appealing but also functional and user-friendly.
-                </p>
-
-                <p>
-                  I have successfully led and participated in national-level UI/UX competitions, demonstrating strong collaboration, analytical thinking, and creativity in solving real-world problems.
-                </p>
-
-                {/* <div className="grid grid-cols-3 py-10 xl:py-16 gap-5 border-b border-mistGray">
-                  {[
-                    { count: "06", label: "Years of experience" },
-                    { count: "165+", label: "Happy Clients" },
-                    { count: "1800+", label: "Project Completed" },
-                  ].map((item, i) => (
-                    <div key={i}>
-                      <h3>{item.count}</h3>
-                      <p className="text-base md:text-lg text-black">
-                        {item.label}
-                      </p>
-                    </div>
-                  ))}
-                </div> */}
-
-                <div className="pt-8 xl:pt-14 flex flex-col sm:flex-row items-center gap-4">
-                  <div className="flex items-center gap-3.5">
+              <div className="mt-10 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center gap-6 print:hidden">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Image
                       src={getImgPath("/images/icon/lang-icon.svg")}
-                      alt="lang-icon"
-                      width={30}
-                      height={30}
+                      alt="Language"
+                      width={24}
+                      height={24}
                     />
-                    <p className="text-base xl:text-xl text-black">Language</p>
                   </div>
-                  <div className="flex flex-wrap justify-center items-center gap-2.5">
-                    {["English", "Indonesia"].map((lang) => (
-                      <p
-                        key={lang}
-                        className="bg-white py-2 md:py-3.5 px-4 md:px-5 w-fit rounded-full text-base xl:text-xl"
-                      >
-                        {lang}
-                      </p>
-                    ))}
-                  </div>
+                  <p className="text-slate-900 font-medium">{dict.about.languages}</p>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <button
+                    onClick={() => setLocale("en")}
+                    className={`px-5 py-2 rounded-full text-sm font-medium border transition-colors cursor-pointer ${
+                      locale === "en" ? "bg-primary text-white border-primary" : "bg-slate-50 text-slate-700 border-slate-200 hover:border-primary hover:text-primary"
+                    }`}
+                  >
+                    English
+                  </button>
+                  <button
+                    onClick={() => setLocale("id")}
+                    className={`px-5 py-2 rounded-full text-sm font-medium border transition-colors cursor-pointer ${
+                      locale === "id" ? "bg-primary text-white border-primary" : "bg-slate-50 text-slate-700 border-slate-200 hover:border-primary hover:text-primary"
+                    }`}
+                  >
+                    Indonesia
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

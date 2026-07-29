@@ -3,8 +3,10 @@ import { getDataPath, getImgPath } from "@/utils/image";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const LatestWork = () => {
+  const { dict, locale } = useLanguage();
   const [workData, setWorkData] = useState<any>(null);
 
   useEffect(() => {
@@ -23,12 +25,12 @@ const LatestWork = () => {
   }, []);
 
   return (
-    <section>
-      <div className="bg-softGray">
+    <section id="latest-works" className="bg-slate-900 text-white selection:bg-primary selection:text-white print:bg-white print:text-black">
+      <div className="bg-softGray print:bg-transparent">
         <div className="container">
-          <div className="py-16 xl:py-32 ">
-            <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
-              <h2>Latest Works</h2>
+          <div className="py-16 xl:py-32 print:py-8">
+            <div className="flex items-center justify-between gap-2 border-b border-white/20 print:border-slate-200 pb-7 mb-9 md:mb-16 print:mb-8">
+              <h2 className="text-white print:text-slate-900">{dict.latestWork.title}</h2>
               <p className="text-xl text-primary">( 04 )</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 xl:gap-y-12">
@@ -70,7 +72,7 @@ const LatestWork = () => {
                               width="64"
                               height="64"
                               rx="32"
-                              fill="#074799"
+                              fill="#2563eb"
                             />
                             <path
                               d="M25.6667 25.3333H39M39 25.3333V38.6666M39 25.3333L25.6667 38.6666"
@@ -85,24 +87,39 @@ const LatestWork = () => {
                     </div>
 
                     {/* --- BAGIAN JUDUL --- */}
-                    <div className="flex flex-col gap-0 xl:gap-2">
+                    <div className="flex flex-col gap-1 xl:gap-2 mt-2">
                       <div className="flex items-center justify-between">
-                        {/* PERBAIKAN DI SINI: Tambahkan target blank */}
                         <Link 
                             href={value.slug}
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="hover:text-primary transition-colors"
                         >
-                          <h5>{value?.title}</h5>
+                          <h5 className="font-semibold text-slate-900">{value?.title?.[locale] || value?.title}</h5>
                         </Link>
                         <Image
                           src={getImgPath("/images/icon/right-arrow-icon.svg")}
                           alt="right-arrow-icon"
                           width={30}
                           height={30}
+                          className="opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
                         />
                       </div>
-                      <p>{value?.client}</p>
+                      <p className="text-slate-500 text-sm">{value?.client}</p>
+                      
+                      {/* --- SKILLS/TOOLS --- */}
+                      {value?.skills && value.skills.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {value.skills.map((skill: string, i: number) => (
+                            <span 
+                              key={i} 
+                              className="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-medium border border-slate-200"
+                            >
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 );

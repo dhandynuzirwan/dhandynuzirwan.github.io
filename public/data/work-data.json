@@ -1,39 +1,52 @@
 {
     "workData": [{
-            "image": "/images/work/profile-arsa.png",
-            "title": "Landing Page Profile with Database",
+            "image": "/images/work/arsatraining.dashboard2.png",
+            "title": { "en": "Arsatraining Dashboard", "id": "Dashboard Arsatraining" },
             "client": "PT Arsa Jaya Prima",
-            "slug": "https://dhandynuzirwan.github.io/profile-arsa/"
+            "slug": "https://www.dashboard.arsatraining.com/",
+            "skills": ["Laravel", "React.js", "Tailwind CSS"]
+        },
+        {
+            "image": "/images/work/profile-arsa.png",
+            "title": { "en": "Landing Page Profile with Database", "id": "Halaman Profil dengan Database" },
+            "client": "PT Arsa Jaya Prima",
+            "slug": "https://dhandynuzirwan.github.io/profile-arsa/",
+            "skills": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
         },
         {
             "image": "/images/work/panen-pintar.png",
-            "title": "Mobile App Design",
+            "title": { "en": "Mobile App Design", "id": "Desain Aplikasi Seluler" },
             "client": "UI/UX Competition",
-            "slug": "https://www.behance.net/gallery/237091071/Panen-Pintar-Smart-Farming-App"
+            "slug": "https://www.behance.net/gallery/237091071/Panen-Pintar-Smart-Farming-App",
+            "skills": ["Figma", "UI/UX Design", "Prototyping"]
         },
         {
             "image": "/images/work/arsa-company.png",
-            "title": "Website & Dashboard",
+            "title": { "en": "Website & Dashboard", "id": "Situs Web & Dashboard" },
             "client": "PT Arsa Jaya Prima",
-            "slug": "https://www.arsatraining.com/"
+            "slug": "https://www.arsatraining.com/",
+            "skills": ["React.js", "Tailwind CSS", "Laravel"]
         },
         {
             "image": "/images/work/total-indo-bangunusa.png",
-            "title": "Management Information System",
+            "title": { "en": "Management Information System", "id": "Sistem Informasi Manajemen" },
             "client": "PT Total Indo Bangunusa",
-            "slug": "https://github.com/dhandynuzirwan/total-indo-bangunusa"
+            "slug": "https://github.com/dhandynuzirwan/total-indo-bangunusa",
+            "skills": ["Laravel", "Bootstrap", "MySQL"]
         },
         {
             "image": "/images/work/duta-madinna.png",
-            "title": "Website & Dashboard",
+            "title": { "en": "Website & Dashboard", "id": "Situs Web & Dashboard" },
             "client": "CV. Duta Madinna Kubah",
-            "slug": "https://github.com/dhandynuzirwan/duta-madinna-kubah"
+            "slug": "https://github.com/dhandynuzirwan/duta-madinna-kubah",
+            "skills": ["Next.js", "TypeScript", "Tailwind CSS"]
         },
         {
             "image": "/images/work/manna-kampus.png",
-            "title": "Mobile App Design",
+            "title": { "en": "Mobile App Design", "id": "Desain Aplikasi Seluler" },
             "client": "Manna Kampus",
-            "slug": "https://www.behance.net/gallery/240601835/Manna-Kampus-Supermarket-Mobile-App-UIUX"
+            "slug": "https://www.behance.net/gallery/240601835/Manna-Kampus-Supermarket-Mobile-App-UIUX",
+            "skills": ["Figma", "User Research", "Wireframing"]
         }
     ]
 }

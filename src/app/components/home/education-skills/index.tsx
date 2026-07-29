@@ -2,8 +2,10 @@
 import { getDataPath, getImgPath } from "@/utils/image";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const EducationSkills = () => {
+  const { dict, locale } = useLanguage();
   const [educationData, setEductionData] = useState<any>(null);
 
   useEffect(() => {
@@ -34,9 +36,9 @@ const EducationSkills = () => {
             height={170}
             className="no-print absolute top-0 left-0 transform -translate-y-1/2"
           />
-          <div className="relative z-10 py-16 md:py-32">
-            <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 xl:mb-16">
-              <h2>Education & Skills</h2>
+          <div className="relative z-10 py-16 md:py-32 print:py-8">
+            <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 xl:mb-16 print:mb-8">
+              <h2>{dict.educationSkills.title}</h2>
               <p className="text-xl text-primary">( 03 )</p>
             </div>
             <div className="flex flex-col lg:flex-row items-center gap-10 xl:gap-20">
@@ -48,8 +50,8 @@ const EducationSkills = () => {
                         <div className="w-1.5 h-1.5 rounded-full bg-black"></div>
                       </div>
                       <div className="flex-1 flex flex-col gap-2">
-                        <h5>{value?.title}</h5>
-                        <p className="font-normal">{value?.description}</p>
+                        <h5>{value?.title?.[locale] || value?.title}</h5>
+                        <p className="font-normal">{value?.description?.[locale] || value?.description}</p>
                       </div>
                     </div>
                   );
@@ -60,35 +62,20 @@ const EducationSkills = () => {
                   return (
                     <div
                       key={index}
-                      className="p-4 xl:p-6 border border-softGray rounded-lg flex flex-col gap-5 sm:gap-10 items-center justify-between"
+                      className="group relative overflow-hidden p-6 xl:p-8 border border-slate-200 bg-gradient-to-b from-white to-slate-50 rounded-2xl flex flex-col items-center justify-center hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 cursor-pointer"
                     >
-                      <div className="flex flex-col items-center gap-5">
+                      {/* Shining Effect Overlay */}
+                      <div className="absolute inset-0 -translate-x-[150%] skew-x-12 bg-gradient-to-r from-transparent via-white/80 to-transparent group-hover:animate-shine z-10 pointer-events-none" />
+                      
+                      <div className="flex flex-col items-center gap-4 relative z-20">
                         <Image
                           src={getImgPath(value?.icon)}
-                          alt="icon"
-                          width={70}
-                          height={70}
+                          alt={value?.name}
+                          width={60}
+                          height={60}
+                          className="group-hover:scale-110 transition-transform duration-300 drop-shadow-sm"
                         />
-                        <p className="text-black font-normal">{value?.name}</p>
-                      </div>
-                      <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <svg
-                            key={i}
-                            width="9"
-                            height="9"
-                            viewBox="0 0 9 9"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <rect
-                              width="9"
-                              height="9"
-                              rx="4.5"
-                              fill={i < value?.rating ? "#001A6E" : "#C0D8E0"}
-                            />
-                          </svg>
-                        ))}
+                        <p className="text-slate-800 font-medium text-center">{value?.name}</p>
                       </div>
                     </div>
                   );

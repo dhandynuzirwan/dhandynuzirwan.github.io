@@ -3,8 +3,10 @@ import { getDataPath, getImgPath } from "@/utils/image";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Contact = () => {
+  const { dict } = useLanguage();
   const [contactData, setContactData] = useState<any>(null);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -67,11 +69,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="no-print">
+    <section id="contact" className="bg-slate-50 relative overflow-hidden print:hidden">
       <div className="container">
         <div className="pt-16 md:pt-32 pb-20">
           <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
-            <h2>Contact Me</h2>
+            <h2>{dict.contact.title}</h2>
             <p className="text-xl text-primary">( 05 )</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -80,7 +82,7 @@ const Contact = () => {
                 <div className="grid grid-cols-2 gap-8">
                   <div>
                     <label htmlFor="name" className="label">
-                      Name *
+                      {dict.contact.name}
                     </label>
                     <input
                       required
@@ -93,7 +95,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <label htmlFor="number" className="label">
-                      Phone *
+                      {dict.contact.phone}
                     </label>
                     <input
                       required
@@ -108,7 +110,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label htmlFor="email" className="label">
-                    Email *
+                    {dict.contact.email}
                   </label>
                   <input
                     required
@@ -122,7 +124,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label htmlFor="message" className="label">
-                    Message *
+                    {dict.contact.message}
                   </label>
                   <textarea
                     required
@@ -143,17 +145,16 @@ const Contact = () => {
                       height={30}
                     />
                     <p className="text-secondary">
-                      Great!!! Email has been Successfully Sent. We will get in
-                      touch asap.
+                      {dict.contact.success}
                     </p>
                   </div>
                 )}
                 <button
                   type="submit"
-                  className="relative overflow-hidden cursor-pointer w-fit py-2 sm:py-3 md:py-5 px-4 sm:px-5 md:px-7 border border-primary rounded-full group"
+                  className="relative overflow-hidden cursor-pointer w-fit py-3 md:py-4 px-6 md:px-8 bg-primary text-white font-medium rounded-full hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5 transition-all duration-300 ease-in-out"
                 >
-                  <span className="relative z-10 text-xl font-medium text-primary group-hover:text-white transition-colors duration-300">
-                    Send Now
+                  <span className="relative z-10 text-lg md:text-xl">
+                    {dict.contact.send}
                   </span>
                 </button>
               </div>
