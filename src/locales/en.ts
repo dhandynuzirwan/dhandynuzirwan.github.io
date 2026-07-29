@@ -22,21 +22,21 @@ export const en = {
     title: "Experience",
     items: [
       {
-        year: "2025 - Present",
+        year: "Feb 2025 - Present",
         title: "Fullstack Developer",
         company: "PT Arsa Jaya Prima",
         type: "Fulltime",
         description: "Developing and maintaining the company's web applications, ensuring functionality and responsive design. I also manage on-page and technical SEO (Search Engine Optimization) strategies to improve organic traffic and search rankings."
       },
       {
-        year: "November 2024",
+        year: "Nov 2024",
         title: "Career Development Center Team",
         company: "BIMAWA UAD",
         type: "Part-time",
         description: "Managed team activities and designed social media content using Figma."
       },
       {
-        year: "Sep 2024",
+        year: "May 2024",
         title: "Junior Fullstack Developer",
         company: "PT Faltek Cahaya Indonesia - Semarang",
         type: "Intern",

@@ -1,14 +1,14 @@
 {
     "workData": [{
             "image": "/images/work/arsatraining.dashboard2.png",
-            "title": { "en": "Arsatraining Dashboard", "id": "Dashboard Arsatraining" },
+            "title": { "en": "Arsatraining Dashboard (CRM,HRIS, & ERP)", "id": "Dashboard Arsatraining (CRM,HRIS, & ERP)" },
             "client": "PT Arsa Jaya Prima",
             "slug": "https://www.dashboard.arsatraining.com/",
-            "skills": ["Laravel", "React.js", "Tailwind CSS"]
+            "skills": ["Laravel", "React.js", "Tailwind CSS", "API Integration"]
         },
         {
             "image": "/images/work/profile-arsa.png",
-            "title": { "en": "Landing Page Profile with Database", "id": "Halaman Profil dengan Database" },
+            "title": { "en": "Landing Page Profile with Database for Ads (Unreleased)", "id": "Halaman Profil dengan Database for Ads (Unreleased)" },
             "client": "PT Arsa Jaya Prima",
             "slug": "https://dhandynuzirwan.github.io/profile-arsa/",
             "skills": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
@@ -22,7 +22,7 @@
         },
         {
             "image": "/images/work/arsa-company.png",
-            "title": { "en": "Website & Dashboard", "id": "Situs Web & Dashboard" },
+            "title": { "en": "Website & Dashboard Marketing", "id": "Situs Web & Dashboard Marketing" },
             "client": "PT Arsa Jaya Prima",
             "slug": "https://www.arsatraining.com/",
             "skills": ["React.js", "Tailwind CSS", "Laravel"]
