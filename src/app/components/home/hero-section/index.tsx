@@ -102,7 +102,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             {/* Glowing orb behind the person to make them pop */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[450px] h-[300px] md:h-[450px] bg-gradient-to-tr from-primary/20 to-blue-300/20 rounded-full blur-[60px] -z-10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] lg:w-[650px] h-[300px] md:h-[500px] lg:h-[650px] bg-gradient-to-tr from-primary/20 to-blue-300/20 rounded-full blur-[80px] -z-10" />
             
             <motion.div
               animate={{ y: [-10, 10, -10] }}
@@ -112,9 +112,9 @@ const HeroSection = () => {
               <Image
                 src={getImgPath("/images/home/banner/banner-dhandy.png")}
                 alt="Dhandy Professional"
-                width={685}
-                height={650}
-                className="w-full max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-auto drop-shadow-2xl"
+                width={800}
+                height={800}
+                className="w-full max-w-[450px] md:max-w-[600px] lg:max-w-[750px] xl:max-w-[850px] h-auto drop-shadow-2xl scale-110 origin-bottom"
                 priority
               />
             </motion.div>
