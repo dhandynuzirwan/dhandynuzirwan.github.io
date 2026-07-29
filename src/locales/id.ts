@@ -12,10 +12,11 @@ export const id = {
   },
   about: {
     title: "Tentang Saya",
-    gradText: "Lulusan Universitas Ahmad Dahlan (IPK: 3.71 / 4.00)",
-    gradSub: "dengan minat yang kuat pada Desain UI/UX, Pengembangan Web, dan Desain Berpusat pada Pengguna (User-Centered Design).",
-    desc1: "Saya memiliki pengalaman langsung dalam mendesain dan mengembangkan antarmuka digital yang intuitif menggunakan Figma, HTML, CSS, dan framework modern, serta melakukan riset pengguna, pembuatan wireframe, dan purwarupa (prototyping). Latar belakang saya dalam desain sekaligus pemrograman memungkinkan saya menciptakan solusi yang tidak hanya menarik secara visual tetapi juga sangat fungsional.",
-    desc2: "Saya juga telah berhasil memimpin dan berpartisipasi dalam kompetisi UI/UX tingkat nasional, membuktikan kemampuan kolaborasi yang kuat, pemikiran analitis, dan kreativitas dalam memecahkan masalah dunia nyata.",
+    desc1: "Saya adalah seorang Full Stack Developer dengan pengalaman membangun aplikasi web end-to-end, sistem enterprise, dan solusi backend terukur menggunakan Laravel, PHP, React, JavaScript, dan Tailwind CSS. Saya berspesialisasi dalam mengembangkan Sistem Manajemen Perusahaan Terintegrasi, termasuk HRIS, CRM, dan ERP, dengan merancang RESTful API yang efisien, mengintegrasikan data antar sistem, dan membangun basis data relasional yang mendukung proses bisnis kompleks.",
+    desc2: "Saya memiliki pengalaman langsung dalam pengembangan backend, implementasi fitur, pemecahan masalah (troubleshooting), perbaikan bug, pengoptimalan performa aplikasi, dan kolaborasi pengembangan perangkat lunak menggunakan Git. Saya sangat menyukai penulisan kode yang bersih, mudah dikelola, serta membangun aplikasi yang aman dan terukur demi memberikan nilai bisnis yang handal.",
+    desc3: "Selain pengembangan backend, saya juga memiliki pondasi kuat dalam pengembangan frontend dan prinsip-prinsip UI/UX. Pengalaman saya sebagai juara kompetisi desain UI/UX tingkat nasional memungkinkan saya menciptakan aplikasi yang tidak hanya kuat secara teknis tetapi juga intuitif, aksesibel, dan mudah digunakan.",
+    desc4: "Selain keahlian teknis, saya aktif mengembangkan keterampilan kepemimpinan, komunikasi, dan kerja sama tim melalui peran sebagai Asisten Dosen, Asisten Laboratorium, staf administrasi universitas, serta anggota aktif Himpunan Mahasiswa Informatika. Pengalaman ini memperkuat kemampuan saya untuk berkolaborasi dalam tim multidisiplin, memecahkan masalah secara efektif, dan bertanggung jawab penuh atas proyek dari tahap perencanaan hingga peluncuran.",
+    desc5: "Saya selalu antusias untuk mempelajari teknologi baru, menghadapi tantangan, dan berkontribusi dalam membangun solusi perangkat lunak berdampak yang meningkatkan proses bisnis maupun pengalaman pengguna.",
     languages: "Bahasa"
   },
   experience: {

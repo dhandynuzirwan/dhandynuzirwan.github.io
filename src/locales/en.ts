@@ -12,10 +12,11 @@ export const en = {
   },
   about: {
     title: "About Me",
-    gradText: "Graduate from Ahmad Dahlan University (GPA: 3.71 / 4.00)",
-    gradSub: "with a strong interest in UI/UX Design, Web Development, and User-Centered Design.",
-    desc1: "I have hands-on experience designing and developing intuitive digital interfaces using Figma, HTML, CSS, and modern frameworks, as well as conducting user research, wireframing, and prototyping. My background in both design and development enables me to create solutions that are not only visually appealing but also highly functional.",
-    desc2: "I have successfully led and participated in national-level UI/UX competitions, demonstrating strong collaboration, analytical thinking, and creativity in solving real-world problems.",
+    desc1: "I am a Full Stack Developer with experience building end-to-end web applications, enterprise systems, and scalable backend solutions using Laravel, PHP, React, JavaScript, and Tailwind CSS. I specialize in developing Integrated Enterprise Management Systems, including HRIS, CRM, and ERP, by designing efficient RESTful APIs, integrating data across multiple systems, and building relational databases that support complex business processes.",
+    desc2: "I have hands-on experience in backend development, feature implementation, troubleshooting, bug fixing, application performance optimization, and collaborative software development using Git. I am passionate about writing clean, maintainable code and building secure, scalable applications that deliver reliable business value.",
+    desc3: "Beyond backend development, I also have a solid foundation in frontend development and UI/UX principles. My experience as a national UI/UX design competition winner enables me to create applications that are not only technically robust but also intuitive, accessible, and user-friendly.",
+    desc4: "In addition to technical expertise, I actively developed leadership, communication, and teamwork skills through roles as a Teaching Assistant, Laboratory Assistant, university administrative staff, and an active member of the Informatics Student Association. These experiences strengthened my ability to collaborate within multidisciplinary teams, solve problems effectively, and take ownership of projects from planning to deployment.",
+    desc5: "I am always eager to learn new technologies, embrace challenges, and contribute to building impactful software solutions that improve business processes and user experiences.",
     languages: "Languages"
   },
   experience: {

@@ -52,16 +52,24 @@ const AboutMe = () => {
             <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 relative overflow-hidden">
               <div className="absolute -top-6 -left-2 text-8xl text-slate-100 font-serif pointer-events-none">"</div>
               
-              <p className="text-slate-600 text-lg md:text-xl leading-relaxed relative z-10">
-                <strong className="text-slate-900 font-semibold">{dict.about.gradText}</strong> {dict.about.gradSub}
+              <p className="text-slate-600 text-lg leading-relaxed relative z-10">
+                {dict.about.desc1}
               </p>
               
               <p className="text-slate-600 text-lg leading-relaxed mt-5">
-                {dict.about.desc1}
+                {dict.about.desc2}
               </p>
 
               <p className="text-slate-600 text-lg leading-relaxed mt-5">
-                {dict.about.desc2}
+                {dict.about.desc3}
+              </p>
+
+              <p className="text-slate-600 text-lg leading-relaxed mt-5">
+                {dict.about.desc4}
+              </p>
+
+              <p className="text-slate-600 text-lg leading-relaxed mt-5">
+                {dict.about.desc5}
               </p>
 
               <div className="mt-10 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center gap-6 print:hidden">
