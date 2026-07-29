@@ -12,6 +12,8 @@ export const en = {
   },
   about: {
     title: "About Me",
+    gradText: "Informatics Graduate from Ahmad Dahlan University (GPA: 3.71 / 4.00)",
+    gradSub: "with a strong background in Software Engineering and UI/UX Design.",
     desc1: "I am a Full Stack Developer with experience building end-to-end web applications, enterprise systems, and scalable backend solutions using Laravel, PHP, React, JavaScript, and Tailwind CSS. I specialize in developing Integrated Enterprise Management Systems, including HRIS, CRM, and ERP, by designing efficient RESTful APIs, integrating data across multiple systems, and building relational databases that support complex business processes.",
     desc2: "I have hands-on experience in backend development, feature implementation, troubleshooting, bug fixing, application performance optimization, and collaborative software development using Git. I am passionate about writing clean, maintainable code and building secure, scalable applications that deliver reliable business value.",
     desc3: "Beyond backend development, I also have a solid foundation in frontend development and UI/UX principles. My experience as a national UI/UX design competition winner enables me to create applications that are not only technically robust but also intuitive, accessible, and user-friendly.",

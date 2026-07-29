@@ -52,7 +52,11 @@ const AboutMe = () => {
             <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 relative overflow-hidden">
               <div className="absolute -top-6 -left-2 text-8xl text-slate-100 font-serif pointer-events-none">"</div>
               
-              <div className="max-h-[400px] overflow-y-auto pr-2 sm:pr-4 custom-scrollbar relative z-10">
+              <p className="text-slate-600 text-lg md:text-xl leading-relaxed relative z-10 mb-6 pb-6 border-b border-slate-100">
+                <strong className="text-slate-900 font-semibold">{dict.about.gradText}</strong> {dict.about.gradSub}
+              </p>
+              
+              <div className="max-h-[300px] overflow-y-auto pr-2 sm:pr-4 custom-scrollbar relative z-10">
                 <p className="text-slate-600 text-lg leading-relaxed">
                   {dict.about.desc1}
                 </p>

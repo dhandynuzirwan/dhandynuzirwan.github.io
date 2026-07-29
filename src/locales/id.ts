@@ -12,6 +12,8 @@ export const id = {
   },
   about: {
     title: "Tentang Saya",
+    gradText: "Lulusan Informatika dari Universitas Ahmad Dahlan (IPK: 3.71 / 4.00)",
+    gradSub: "dengan rekam jejak yang kuat dalam Rekayasa Perangkat Lunak dan Desain UI/UX.",
     desc1: "Saya adalah seorang Full Stack Developer dengan pengalaman membangun aplikasi web end-to-end, sistem enterprise, dan solusi backend terukur menggunakan Laravel, PHP, React, JavaScript, dan Tailwind CSS. Saya berspesialisasi dalam mengembangkan Sistem Manajemen Perusahaan Terintegrasi, termasuk HRIS, CRM, dan ERP, dengan merancang RESTful API yang efisien, mengintegrasikan data antar sistem, dan membangun basis data relasional yang mendukung proses bisnis kompleks.",
     desc2: "Saya memiliki pengalaman langsung dalam pengembangan backend, implementasi fitur, pemecahan masalah (troubleshooting), perbaikan bug, pengoptimalan performa aplikasi, dan kolaborasi pengembangan perangkat lunak menggunakan Git. Saya sangat menyukai penulisan kode yang bersih, mudah dikelola, serta membangun aplikasi yang aman dan terukur demi memberikan nilai bisnis yang handal.",
     desc3: "Selain pengembangan backend, saya juga memiliki pondasi kuat dalam pengembangan frontend dan prinsip-prinsip UI/UX. Pengalaman saya sebagai juara kompetisi desain UI/UX tingkat nasional memungkinkan saya menciptakan aplikasi yang tidak hanya kuat secara teknis tetapi juga intuitif, aksesibel, dan mudah digunakan.",
