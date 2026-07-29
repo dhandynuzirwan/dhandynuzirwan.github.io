@@ -3,8 +3,8 @@
             "image": "/images/work/arsatraining.dashboard2.png",
             "title": { "en": "Arsatraining Dashboard (CRM,HRIS, & ERP)", "id": "Dashboard Arsatraining (CRM,HRIS, & ERP)" },
             "client": "PT Arsa Jaya Prima",
-            "slug": "https://www.dashboard.arsatraining.com/",
-            "skills": ["Laravel", "React.js", "Tailwind CSS", "API Integration"]
+            "slug": "https://github.com/dhandynuzirwan/dashboard-mkt",
+            "skills": ["Laravel", "PHP", "Bootstrap", "API Integration"]
         },
         {
             "image": "/images/work/profile-arsa.png",
