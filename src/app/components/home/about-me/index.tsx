@@ -4,6 +4,8 @@ import { getImgPath } from "@/utils/image";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/app/context/LanguageContext";
+import WakatimeStats from "../wakatime-stats";
+import GithubContribution from "../github-calendar";
 
 const AboutMe = () => {
   const { dict, locale, setLocale } = useLanguage();
@@ -112,6 +114,9 @@ const AboutMe = () => {
             </div>
           </motion.div>
         </div>
+
+        <WakatimeStats />
+        <GithubContribution />
       </div>
     </section>
   );

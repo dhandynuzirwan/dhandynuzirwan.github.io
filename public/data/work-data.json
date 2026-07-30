@@ -2,10 +2,16 @@
     "workData": [{
             "image": "/images/work/arsatraining.dashboard2.png",
             "gallery": [
-                "/images/work/arsatraining.dashboard2.png",
-                "/images/work/arsatraining.dashboard2.png",
-                "/images/work/arsatraining.dashboard2.png",
-                "/images/work/arsatraining.dashboard2.png"
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-1.png",
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-2.png",
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-3.png",
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-4.png",
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-5.png",
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-6.png",
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-7.png",
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-8.png",
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-9.png",
+                "/images/work/dashboard-arsatraining/dashboard-arsatraining-10.png"
             ],
             "title": { "en": "Arsatraining Dashboard (CRM,HRIS, & ERP)", "id": "Dashboard Arsatraining (CRM,HRIS, & ERP)" },
             "client": "PT Arsa Jaya Prima",
@@ -23,10 +29,12 @@
         {
             "image": "/images/work/profile-arsa.png",
             "gallery": [
-                "/images/work/profile-arsa.png",
-                "/images/work/profile-arsa.png",
-                "/images/work/profile-arsa.png",
-                "/images/work/profile-arsa.png"
+                "/images/work/profile-ads/profile-ads-1.png",
+                "/images/work/profile-ads/profile-ads-2.png",
+                "/images/work/profile-ads/profile-ads-3.png",
+                "/images/work/profile-ads/profile-ads-4.png",
+                "/images/work/profile-ads/profile-ads-5.png",
+                "/images/work/profile-ads/profile-ads-6.png"
             ],
             "title": { "en": "Landing Page Profile with Database for Ads (Unreleased)", "id": "Halaman Profil dengan Database for Ads (Unreleased)" },
             "client": "PT Arsa Jaya Prima",
@@ -44,10 +52,16 @@
         {
             "image": "/images/work/panen-pintar.png",
             "gallery": [
-                "/images/work/panen-pintar.png",
-                "/images/work/panen-pintar.png",
-                "/images/work/panen-pintar.png",
-                "/images/work/panen-pintar.png"
+                "/images/work/panen-pintar/panen-pintar-1.png",
+                "/images/work/panen-pintar/panen-pintar-2.png",
+                "/images/work/panen-pintar/panen-pintar-3.png",
+                "/images/work/panen-pintar/panen-pintar-4.png",
+                "/images/work/panen-pintar/panen-pintar-5.png",
+                "/images/work/panen-pintar/panen-pintar-6.png",
+                "/images/work/panen-pintar/panen-pintar-7.png",
+                "/images/work/panen-pintar/panen-pintar-8.png",
+                "/images/work/panen-pintar/panen-pintar-9.png",
+                "/images/work/panen-pintar/panen-pintar-10.png"
             ],
             "title": { "en": "Mobile App Design", "id": "Desain Aplikasi Seluler" },
             "client": "UI/UX Competition",
@@ -65,10 +79,14 @@
         {
             "image": "/images/work/arsa-company.png",
             "gallery": [
-                "/images/work/arsa-company.png",
-                "/images/work/arsa-company.png",
-                "/images/work/arsa-company.png",
-                "/images/work/arsa-company.png"
+                "/images/work/arsatraining-com/arsatraining-com-1.png",
+                "/images/work/arsatraining-com/arsatraining-com-2.png",
+                "/images/work/arsatraining-com/arsatraining-com-3.png",
+                "/images/work/arsatraining-com/arsatraining-com-4.png",
+                "/images/work/arsatraining-com/arsatraining-com-5.png",
+                "/images/work/arsatraining-com/arsatraining-com-6.png",
+                "/images/work/arsatraining-com/arsatraining-com-7.png",
+                "/images/work/arsatraining-com/arsatraining-com-8.png"
             ],
             "title": { "en": "Website & Dashboard Marketing", "id": "Situs Web & Dashboard Marketing" },
             "client": "PT Arsa Jaya Prima",
