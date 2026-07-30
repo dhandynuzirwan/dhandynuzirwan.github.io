@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={bricolageGrotesque.className}>
+      <body className={bricolageGrotesque.className} suppressHydrationWarning>
         <LanguageProvider>
           <Header />
           {children}
