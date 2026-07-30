@@ -69,11 +69,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-slate-50 relative overflow-hidden print:hidden">
+    <section id="contact" className="bg-slate-50 dark:bg-slate-950 relative overflow-hidden print:hidden">
       <div className="container">
         <div className="pt-16 md:pt-32 pb-20">
-          <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
-            <h2>{dict.contact.title}</h2>
+          <div className="flex items-center justify-between gap-2 border-b border-slate-900 dark:border-white pb-7 mb-9 md:mb-16">
+            <h2 className="text-slate-900 dark:text-white">{dict.contact.title}</h2>
             <p className="text-xl text-primary">( 05 )</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -144,7 +144,7 @@ const Contact = () => {
                       width={30}
                       height={30}
                     />
-                    <p className="text-secondary">
+                    <p className="text-secondary dark:text-slate-300">
                       {dict.contact.success}
                     </p>
                   </div>
@@ -165,7 +165,7 @@ const Contact = () => {
                   return (
                     <div key={index}>
                       <Link
-                        className="text-base sm:text-lg font-normal text-secondary hover:text-primary"
+                        className="text-base sm:text-lg font-normal text-secondary dark:text-slate-400 hover:text-primary dark:hover:text-primary"
                         // onClick={(e) => e.preventDefault()}
                         href={value?.href}
                         target="_blank" // Wajib untuk sosmed agar portfolio tidak tertutup
@@ -186,7 +186,7 @@ const Contact = () => {
                         href={value?.link}
                         target="_blank" // Wajib untuk sosmed agar portfolio tidak tertutup
                         rel="noopener noreferrer" // Security best practice
-                        className="text-base lg:text-lg text-black font-normal border-b border-black pb-3 hover:text-primary hover:border-primary"
+                        className="text-base lg:text-lg text-slate-900 dark:text-white font-normal border-b border-slate-900 dark:border-white pb-3 hover:text-primary hover:border-primary dark:hover:text-primary dark:hover:border-primary"
                       >
                         {value?.label}
                       </Link>

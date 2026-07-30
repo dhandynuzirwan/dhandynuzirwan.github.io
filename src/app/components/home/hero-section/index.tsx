@@ -50,7 +50,7 @@ const HeroSection = () => {
                 </span>
               </div>
               <div className="flex items-center gap-4 md:gap-6 mt-2 print:mt-1">
-                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-slate-900 print:text-4xl">
+                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-slate-900 dark:text-white print:text-4xl">
                   {dict.hero.im}
                 </h1>
                 <motion.div 
@@ -67,14 +67,14 @@ const HeroSection = () => {
                   />
                 </motion.div>
               </div>
-              <h2 className="text-3xl md:text-4xl xl:text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-slate-500 print:text-2xl print:text-slate-600">
+              <h2 className="text-3xl md:text-4xl xl:text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-slate-500 dark:from-slate-300 dark:to-slate-400 print:text-2xl print:text-slate-600">
                 {dict.hero.role}
               </h2>
             </motion.div>
             
             <motion.p 
               variants={itemVariants}
-              className="text-slate-500 text-lg md:text-xl font-normal max-w-xl leading-relaxed print:text-sm"
+              className="text-slate-500 dark:text-slate-400 text-lg md:text-xl font-normal max-w-xl leading-relaxed print:text-sm"
             >
               {dict.hero.description}
             </motion.p>
@@ -82,13 +82,13 @@ const HeroSection = () => {
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-4 print:hidden">
                <button 
                  onClick={() => document.getElementById('latest-works')?.scrollIntoView({ behavior: 'smooth' })}
-                 className="px-8 py-3.5 bg-slate-900 text-white rounded-full font-medium hover:bg-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-1 cursor-pointer"
+                 className="px-8 py-3.5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full font-medium hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-1 cursor-pointer"
                >
                  {dict.hero.viewProjects}
                </button>
                <button 
                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                 className="px-8 py-3.5 bg-white text-slate-700 border border-slate-200 rounded-full font-medium hover:border-primary hover:text-primary transition-all duration-300 hover:shadow-sm cursor-pointer"
+                 className="px-8 py-3.5 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 rounded-full font-medium hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-all duration-300 hover:shadow-sm cursor-pointer"
                >
                  {dict.hero.contactMe}
                </button>

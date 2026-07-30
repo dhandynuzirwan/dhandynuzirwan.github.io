@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col gap-1.5 items-center sm:items-start">
           <div className="relative flex items-center w-full">
-            <div className="flex-grow h-px bg-black" />
+            <div className="flex-grow h-px bg-black dark:bg-slate-700" />
             <div className="mx-4">
               <Logo />
             </div>
-            <div className="flex-grow h-px bg-black" />
+            <div className="flex-grow h-px bg-black dark:bg-slate-700" />
           </div>
           
         </div>

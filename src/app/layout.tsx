@@ -5,6 +5,8 @@ import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
 import { LanguageProvider } from "./context/LanguageContext";
 
+import { ThemeProvider } from "./context/ThemeProvider";
+
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,11 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={bricolageGrotesque.className} suppressHydrationWarning>
-        <LanguageProvider>
-          <Header />
-          {children}
-          <Footer/>
-        </LanguageProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <LanguageProvider>
+            <Header />
+            {children}
+            <Footer/>
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

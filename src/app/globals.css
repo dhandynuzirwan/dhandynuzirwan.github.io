@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  @apply bg-white text-slate-900;
+  @apply bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100;
 }
 
 
@@ -34,11 +34,11 @@ body {
 }
 
 @utility label {
-  @apply text-secondary text-sm font-normal;
+  @apply text-secondary dark:text-slate-400 text-sm font-normal;
 }
 
 @utility input {
-  @apply w-full border-b border-gray focus:border-primary focus:outline-none py-2;
+  @apply w-full border-b border-gray dark:border-slate-700 bg-transparent text-slate-900 dark:text-white focus:border-primary dark:focus:border-primary focus:outline-none py-2;
 }
 
 /* ====== BASE TYPOGRAPHY ====== */

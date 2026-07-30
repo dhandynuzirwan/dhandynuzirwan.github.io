@@ -11,6 +11,7 @@ const Logo = () => {
           alt="logo"
           width={70}
           height={70}
+          className="dark:invert"
         />
       </Link>
     </>

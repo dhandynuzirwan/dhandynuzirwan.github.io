@@ -109,12 +109,12 @@ const WakatimeStats = () => {
           </motion.div>
 
           {/* Card 2: Languages */}
-          <motion.div variants={itemVariants} className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 flex flex-col min-h-[280px]">
+          <motion.div variants={itemVariants} className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl shadow-slate-200/40 dark:shadow-none border border-slate-100 dark:border-slate-800 flex flex-col min-h-[280px]">
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center border border-blue-100">
-                <Code2 className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center border border-blue-100 dark:border-blue-800">
+                <Code2 className="w-6 h-6 text-blue-600 dark:text-blue-400" />
               </div>
-              <p className="text-slate-800 font-semibold text-lg">
+              <p className="text-slate-800 dark:text-slate-200 font-semibold text-lg">
                 {locale === "id" ? "Bahasa Teratas" : "Top Languages"}
               </p>
             </div>
@@ -122,10 +122,10 @@ const WakatimeStats = () => {
               {data.languages.map((lang) => (
                 <div key={lang.name}>
                   <div className="flex justify-between text-sm mb-2">
-                    <span className="font-semibold text-slate-700">{lang.name}</span>
-                    <span className="text-slate-500">{lang.text}</span>
+                    <span className="font-semibold text-slate-700 dark:text-slate-300">{lang.name}</span>
+                    <span className="text-slate-500 dark:text-slate-400">{lang.text}</span>
                   </div>
-                  <div className="h-2.5 w-full bg-slate-100 rounded-full overflow-hidden">
+                  <div className="h-2.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
                       whileInView={{ width: `${lang.percent}%` }}
@@ -140,27 +140,27 @@ const WakatimeStats = () => {
           </motion.div>
 
           {/* Card 3: Best Day */}
-          <motion.div variants={itemVariants} className="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 flex flex-col min-h-[280px] relative overflow-hidden group">
+          <motion.div variants={itemVariants} className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-xl shadow-slate-200/40 dark:shadow-none border border-slate-100 dark:border-slate-800 flex flex-col min-h-[280px] relative overflow-hidden group">
             <div className="absolute -right-10 -top-10 w-40 h-40 bg-amber-500/5 rounded-full group-hover:scale-150 transition-transform duration-700 ease-out" />
             
             <div className="flex items-center gap-4 mb-6 relative z-10">
-              <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center border border-amber-100">
-                <Calendar className="w-6 h-6 text-amber-600" />
+              <div className="w-12 h-12 rounded-2xl bg-amber-50 dark:bg-amber-900/30 flex items-center justify-center border border-amber-100 dark:border-amber-800">
+                <Calendar className="w-6 h-6 text-amber-600 dark:text-amber-400" />
               </div>
-              <p className="text-slate-800 font-semibold text-lg">
+              <p className="text-slate-800 dark:text-slate-200 font-semibold text-lg">
                 {locale === "id" ? "Hari Terproduktif" : "Most Productive Day"}
               </p>
             </div>
             
             <div className="relative z-10 mt-auto flex flex-col justify-end">
-              <p className="text-slate-500 mb-2">
+              <p className="text-slate-500 dark:text-slate-400 mb-2">
                 {locale === "id" ? "Rekor ngoding terlama:" : "Longest coding record:"}
               </p>
-              <h4 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
+              <h4 className="text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight">
                 {data.best_day?.text || "-"}
               </h4>
-              <div className="inline-block px-4 py-2.5 bg-amber-50 border border-amber-100 rounded-xl w-fit">
-                <p className="text-sm font-semibold text-amber-600">
+              <div className="inline-block px-4 py-2.5 bg-amber-50 dark:bg-amber-900/30 border border-amber-100 dark:border-amber-800 rounded-xl w-fit">
+                <p className="text-sm font-semibold text-amber-600 dark:text-amber-400">
                   {data.best_day ? formatDate(data.best_day.date) : ""}
                 </p>
               </div>

@@ -10,7 +10,7 @@ import GithubContribution from "../github-calendar";
 const AboutMe = () => {
   const { dict, locale, setLocale } = useLanguage();
   return (
-    <section className="py-20 md:py-32 relative bg-slate-50 overflow-hidden print:py-8 print:bg-white">
+    <section className="py-20 md:py-32 relative bg-slate-50 dark:bg-slate-950 overflow-hidden print:py-8 print:bg-white">
       {/* Decorative Blur */}
       <div className="absolute top-1/2 -right-1/4 w-1/2 h-1/2 bg-primary/5 blur-[100px] rounded-full pointer-events-none" />
       
@@ -20,10 +20,10 @@ const AboutMe = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="flex items-end justify-between border-b border-slate-200 pb-6 mb-12 lg:mb-20"
+          className="flex items-end justify-between border-b border-slate-200 dark:border-slate-800 pb-6 mb-12 lg:mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900">{dict.about.title}</h2>
-          <p className="text-lg md:text-xl font-medium text-primary bg-primary/10 px-4 py-1 rounded-full">01</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white">{dict.about.title}</h2>
+          <p className="text-lg md:text-xl font-medium text-primary bg-primary/10 dark:bg-primary/20 px-4 py-1 rounded-full">01</p>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center print:flex-row print:items-start">
@@ -32,7 +32,7 @@ const AboutMe = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="w-full max-w-sm lg:w-[400px] aspect-[3/4] relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/50 bg-white print:w-[150px] print:max-w-[150px] print:h-[200px] print:aspect-auto"
+            className="w-full max-w-sm lg:w-[400px] aspect-[3/4] relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/50 dark:shadow-none bg-white dark:bg-slate-900 print:w-[150px] print:max-w-[150px] print:h-[200px] print:aspect-auto"
           >
             <Image
               src={getImgPath("/images/home/about-me/wisuda.JPG")}
@@ -51,52 +51,53 @@ const AboutMe = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="flex-1 w-full space-y-6 print:space-y-0"
           >
-            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 relative overflow-hidden print:p-0 print:shadow-none print:border-none print:overflow-visible">
-              <div className="absolute -top-6 -left-2 text-8xl text-slate-100 font-serif pointer-events-none">"</div>
+            <div className="bg-white dark:bg-slate-900 p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/40 dark:shadow-none border border-slate-100 dark:border-slate-800 relative overflow-hidden print:p-0 print:shadow-none print:border-none print:overflow-visible">
+              <div className="absolute -top-6 -left-2 text-8xl text-slate-100 dark:text-slate-800 font-serif pointer-events-none">"</div>
               
-              <p className="text-slate-600 text-lg md:text-xl leading-relaxed relative z-10 mb-6 pb-6 border-b border-slate-100">
-                <strong className="text-slate-900 font-semibold">{dict.about.gradText}</strong> {dict.about.gradSub}
+              <p className="text-slate-600 dark:text-slate-300 text-lg md:text-xl leading-relaxed relative z-10 mb-6 pb-6 border-b border-slate-100 dark:border-slate-800">
+                <strong className="text-slate-900 dark:text-white font-semibold">{dict.about.gradText}</strong> {dict.about.gradSub}
               </p>
               
               <div className="max-h-[300px] overflow-y-auto pr-2 sm:pr-4 custom-scrollbar relative z-10">
-                <p className="text-slate-600 text-lg leading-relaxed">
+                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
                   {dict.about.desc1}
                 </p>
                 
-                <p className="text-slate-600 text-lg leading-relaxed mt-5">
+                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mt-5">
                   {dict.about.desc2}
                 </p>
 
-                <p className="text-slate-600 text-lg leading-relaxed mt-5">
+                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mt-5">
                   {dict.about.desc3}
                 </p>
 
-                <p className="text-slate-600 text-lg leading-relaxed mt-5">
+                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mt-5">
                   {dict.about.desc4}
                 </p>
 
-                <p className="text-slate-600 text-lg leading-relaxed mt-5">
+                <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mt-5">
                   {dict.about.desc5}
                 </p>
               </div>
 
-              <div className="mt-10 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center gap-6 print:hidden">
+              <div className="mt-10 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center gap-6 print:hidden">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
                     <Image
                       src={getImgPath("/images/icon/lang-icon.svg")}
                       alt="Language"
                       width={24}
                       height={24}
+                      className="dark:invert"
                     />
                   </div>
-                  <p className="text-slate-900 font-medium">{dict.about.languages}</p>
+                  <p className="text-slate-900 dark:text-slate-200 font-medium">{dict.about.languages}</p>
                 </div>
                 <div className="flex flex-wrap gap-3">
                   <button
                     onClick={() => setLocale("en")}
                     className={`px-5 py-2 rounded-full text-sm font-medium border transition-colors cursor-pointer ${
-                      locale === "en" ? "bg-primary text-white border-primary" : "bg-slate-50 text-slate-700 border-slate-200 hover:border-primary hover:text-primary"
+                      locale === "en" ? "bg-primary text-white border-primary" : "bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-primary hover:text-primary"
                     }`}
                   >
                     English

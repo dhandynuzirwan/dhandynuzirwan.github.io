@@ -6,8 +6,11 @@ import { GitHubCalendar } from "react-github-calendar";
 import { GitBranch } from "lucide-react";
 import { useLanguage } from "@/app/context/LanguageContext";
 
+import { useTheme } from "next-themes";
+
 const GithubContribution = () => {
   const { locale } = useLanguage();
+  const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
   
   useEffect(() => {
@@ -26,12 +29,12 @@ const GithubContribution = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="w-full bg-white border border-slate-100 rounded-3xl p-4 sm:p-6 md:p-10 shadow-xl shadow-slate-200/40 flex justify-center"
+          className="w-full bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-4 sm:p-6 md:p-10 shadow-xl shadow-slate-200/40 dark:shadow-none flex justify-center"
         >
           <div className="w-full flex justify-center [&>article]:w-full [&>article]:max-w-full">
             <GitHubCalendar 
               username={githubUsername} 
-              colorScheme="light"
+              colorScheme={theme === "dark" ? "dark" : "light"}
               blockSize={14}
               blockMargin={5}
               fontSize={14}
