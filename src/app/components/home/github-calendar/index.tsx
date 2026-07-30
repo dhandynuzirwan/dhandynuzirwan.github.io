@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 import { GitHubCalendar } from "react-github-calendar";
@@ -7,25 +8,16 @@ import { useLanguage } from "@/app/context/LanguageContext";
 
 const GithubContribution = () => {
   const { locale } = useLanguage();
+  const [mounted, setMounted] = useState(false);
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   
   // Ganti username ini dengan username GitHub kamu
   const githubUsername = "dhandynuzirwan"; 
 
-  const selectLastHalfYear = contributions => {
-      const currentYear = new Date().getFullYear();
-      const currentMonth = new Date().getMonth();
-      const shownMonths = 12;
-    
-      return contributions.filter(activity => {
-          const date = new Date(activity.date);
-          const monthOfDay = date.getMonth();
-          return (
-            date.getFullYear() === currentYear &&
-            monthOfDay > currentMonth - shownMonths &&
-            monthOfDay <= currentMonth
-          );
-      });
-  };
+  if (!mounted) return null;
 
   return (
     <div className="mt-6 relative z-10 print:hidden w-full">
