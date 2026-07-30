@@ -35,26 +35,26 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center justify-between">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center justify-between print:flex-row print:items-center">
           <motion.div 
-            className="flex flex-col gap-6 lg:gap-8 max-w-2xl w-full z-10"
+            className="flex flex-col gap-6 lg:gap-8 max-w-2xl w-full z-10 print:gap-4 print:w-2/3"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
-            <motion.div variants={itemVariants} className="space-y-3">
+            <motion.div variants={itemVariants} className="space-y-3 print:space-y-1">
               <div className="flex items-center gap-3">
-                <span className="w-8 h-[2px] bg-primary rounded-full"></span>
+                <span className="w-8 h-[2px] bg-primary rounded-full print:hidden"></span>
                 <span className="text-primary font-semibold tracking-widest uppercase text-sm">
                   {dict.hero.welcome}
                 </span>
               </div>
-              <div className="flex items-center gap-4 md:gap-6 mt-2">
-                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-slate-900">
+              <div className="flex items-center gap-4 md:gap-6 mt-2 print:mt-1">
+                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-slate-900 print:text-4xl">
                   {dict.hero.im}
                 </h1>
                 <motion.div 
-                  className="inline-block origin-[70%_70%]"
+                  className="inline-block origin-[70%_70%] print:hidden"
                   animate={{ rotate: [0, 14, -8, 14, -4, 10, 0] }}
                   transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
                 >
@@ -67,14 +67,14 @@ const HeroSection = () => {
                   />
                 </motion.div>
               </div>
-              <h2 className="text-3xl md:text-4xl xl:text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-slate-500">
+              <h2 className="text-3xl md:text-4xl xl:text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-slate-500 print:text-2xl print:text-slate-600">
                 {dict.hero.role}
               </h2>
             </motion.div>
             
             <motion.p 
               variants={itemVariants}
-              className="text-slate-500 text-lg md:text-xl font-normal max-w-xl leading-relaxed"
+              className="text-slate-500 text-lg md:text-xl font-normal max-w-xl leading-relaxed print:text-sm"
             >
               {dict.hero.description}
             </motion.p>
@@ -96,25 +96,25 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.div 
-            className="w-full lg:w-1/2 relative flex justify-center lg:justify-end"
+            className="w-full lg:w-1/2 relative flex justify-center lg:justify-end print:w-1/3 print:justify-center"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             {/* Glowing orb behind the person to make them pop */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] lg:w-[650px] h-[300px] md:h-[500px] lg:h-[650px] bg-gradient-to-tr from-primary/20 to-blue-300/20 rounded-full blur-[80px] -z-10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[500px] lg:w-[650px] h-[300px] md:h-[500px] lg:h-[650px] bg-gradient-to-tr from-primary/20 to-blue-300/20 rounded-full blur-[80px] -z-10 print:hidden" />
             
             <motion.div
               animate={{ y: [-10, 10, -10] }}
               transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-              className="relative z-10"
+              className="relative z-10 print:transform-none"
             >
               <Image
                 src={getImgPath("/images/home/banner/banner-dhandy.png")}
                 alt="Dhandy Professional"
                 width={800}
                 height={800}
-                className="w-full max-w-[450px] md:max-w-[600px] lg:max-w-[750px] xl:max-w-[850px] h-auto drop-shadow-2xl scale-110 origin-bottom"
+                className="w-full max-w-[450px] md:max-w-[600px] lg:max-w-[750px] xl:max-w-[850px] h-auto drop-shadow-2xl scale-110 origin-bottom print:max-w-[150px] print:scale-100"
                 priority
               />
             </motion.div>

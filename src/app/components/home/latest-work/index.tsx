@@ -25,12 +25,12 @@ const LatestWork = () => {
   }, []);
 
   return (
-    <section id="latest-works" className="bg-slate-900 text-white selection:bg-primary selection:text-white print:bg-white print:text-black">
+    <section id="latest-works">
       <div className="bg-softGray print:bg-transparent">
         <div className="container">
           <div className="py-16 xl:py-32 print:py-8">
-            <div className="flex items-center justify-between gap-2 border-b border-white/20 print:border-slate-200 pb-7 mb-9 md:mb-16 print:mb-8">
-              <h2 className="text-white print:text-slate-900">{dict.latestWork.title}</h2>
+            <div className="flex items-center justify-between gap-2 border-b border-black print:border-slate-200 pb-7 mb-9 md:mb-16 print:mb-8">
+              <h2 className="text-slate-900">{dict.latestWork.title}</h2>
               <p className="text-xl text-primary">( 04 )</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 xl:gap-y-12">

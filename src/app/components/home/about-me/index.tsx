@@ -24,22 +24,22 @@ const AboutMe = () => {
           <p className="text-lg md:text-xl font-medium text-primary bg-primary/10 px-4 py-1 rounded-full">01</p>
         </motion.div>
 
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center print:flex-row print:items-start">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="w-full max-w-sm lg:w-[400px] aspect-[3/4] relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/50 bg-white"
+            className="w-full max-w-sm lg:w-[400px] aspect-[3/4] relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/50 bg-white print:w-[150px] print:max-w-[150px] print:h-[200px] print:aspect-auto"
           >
             <Image
               src={getImgPath("/images/home/about-me/wisuda.JPG")}
               alt="About Dhandy"
               fill
-              className="object-cover hover:scale-105 transition-transform duration-700"
+              className="object-cover hover:scale-105 transition-transform duration-700 print:relative print:object-contain"
             />
             {/* Subtle overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent pointer-events-none print:hidden" />
           </motion.div>
 
           <motion.div 
@@ -47,9 +47,9 @@ const AboutMe = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="flex-1 w-full space-y-6"
+            className="flex-1 w-full space-y-6 print:space-y-0"
           >
-            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 relative overflow-hidden">
+            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/40 border border-slate-100 relative overflow-hidden print:p-0 print:shadow-none print:border-none print:overflow-visible">
               <div className="absolute -top-6 -left-2 text-8xl text-slate-100 font-serif pointer-events-none">"</div>
               
               <p className="text-slate-600 text-lg md:text-xl leading-relaxed relative z-10 mb-6 pb-6 border-b border-slate-100">
