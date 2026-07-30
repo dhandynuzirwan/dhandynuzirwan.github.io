@@ -1,52 +1,150 @@
 {
     "workData": [{
             "image": "/images/work/arsatraining.dashboard2.png",
+            "gallery": [
+                "/images/work/arsatraining.dashboard2.png",
+                "/images/work/arsatraining.dashboard2.png",
+                "/images/work/arsatraining.dashboard2.png",
+                "/images/work/arsatraining.dashboard2.png"
+            ],
             "title": { "en": "Arsatraining Dashboard (CRM,HRIS, & ERP)", "id": "Dashboard Arsatraining (CRM,HRIS, & ERP)" },
             "client": "PT Arsa Jaya Prima",
             "slug": "https://github.com/dhandynuzirwan/dashboard-mkt",
-            "skills": ["Laravel", "PHP", "Bootstrap", "API Integration"]
+            "skills": ["Laravel 12", "PHP 8.2", "Bootstrap 5", "API Integration", "MySQL"],
+            "description": {
+                "en": "A comprehensive enterprise dashboard developed to manage marketing, Customer Relationship Management (CRM), and Human Resource Information Systems (HRIS). This integrated solution centralizes data flow and administrative tasks.",
+                "id": "Dashboard perusahaan komprehensif yang dikembangkan untuk mengelola pemasaran, Customer Relationship Management (CRM), dan Human Resource Information Systems (HRIS). Solusi terintegrasi ini memusatkan alur data dan tugas administratif."
+            },
+            "goals": {
+                "en": "To streamline business processes and integrate multiple enterprise systems into a single, cohesive platform, increasing overall operational efficiency by 40%.",
+                "id": "Untuk menyederhanakan proses bisnis dan mengintegrasikan berbagai sistem enterprise ke dalam satu platform yang terpadu, meningkatkan efisiensi operasional secara keseluruhan sebesar 40%."
+            }
         },
         {
             "image": "/images/work/profile-arsa.png",
+            "gallery": [
+                "/images/work/profile-arsa.png",
+                "/images/work/profile-arsa.png",
+                "/images/work/profile-arsa.png",
+                "/images/work/profile-arsa.png"
+            ],
             "title": { "en": "Landing Page Profile with Database for Ads (Unreleased)", "id": "Halaman Profil dengan Database for Ads (Unreleased)" },
             "client": "PT Arsa Jaya Prima",
             "slug": "https://dhandynuzirwan.github.io/profile-arsa/",
-            "skills": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+            "skills": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+            "description": {
+                "en": "A highly optimized company profile landing page designed specifically to capture leads from digital advertising campaigns. Features a custom backend for direct lead tracking and database management.",
+                "id": "Halaman arahan (landing page) profil perusahaan yang sangat dioptimalkan dan dirancang khusus untuk menjaring prospek dari kampanye periklanan digital. Dilengkapi backend khusus untuk pelacakan prospek langsung dan manajemen database."
+            },
+            "goals": {
+                "en": "Maximize ad conversion rates with a fast-loading interface and securely store lead information in a structured database for the sales team.",
+                "id": "Memaksimalkan rasio konversi iklan dengan antarmuka yang memuat cepat serta menyimpan informasi prospek secara aman di database terstruktur untuk tim penjualan."
+            }
         },
         {
             "image": "/images/work/panen-pintar.png",
+            "gallery": [
+                "/images/work/panen-pintar.png",
+                "/images/work/panen-pintar.png",
+                "/images/work/panen-pintar.png",
+                "/images/work/panen-pintar.png"
+            ],
             "title": { "en": "Mobile App Design", "id": "Desain Aplikasi Seluler" },
             "client": "UI/UX Competition",
             "slug": "https://www.behance.net/gallery/237091071/Panen-Pintar-Smart-Farming-App",
-            "skills": ["Figma", "UI/UX Design", "Prototyping"]
+            "skills": ["Figma", "UI/UX Design", "Prototyping", "Design Thinking", "User Research"],
+            "description": {
+                "en": "Panen Pintar is a smart farming mobile application concept that won a national UI/UX competition. The app connects farmers with agricultural experts, provides weather insights, and offers marketplace features.",
+                "id": "Panen Pintar adalah konsep aplikasi seluler pertanian pintar yang memenangkan kompetisi UI/UX nasional. Aplikasi ini menghubungkan petani dengan pakar pertanian, memberikan wawasan cuaca, dan menawarkan fitur lokapasar (marketplace)."
+            },
+            "goals": {
+                "en": "Deliver an intuitive, accessible user experience for farmers while solving real-world agricultural supply chain issues through human-centered design.",
+                "id": "Menghadirkan pengalaman pengguna yang intuitif dan mudah diakses bagi para petani sembari menyelesaikan masalah rantai pasokan pertanian di dunia nyata melalui pendekatan desain yang berpusat pada manusia (human-centered design)."
+            }
         },
         {
             "image": "/images/work/arsa-company.png",
+            "gallery": [
+                "/images/work/arsa-company.png",
+                "/images/work/arsa-company.png",
+                "/images/work/arsa-company.png",
+                "/images/work/arsa-company.png"
+            ],
             "title": { "en": "Website & Dashboard Marketing", "id": "Situs Web & Dashboard Marketing" },
             "client": "PT Arsa Jaya Prima",
             "slug": "https://www.arsatraining.com/",
-            "skills": ["React.js", "Tailwind CSS", "Laravel"]
+            "skills": ["PHP 8.2", "Tailwind CSS", "Laravel 12", "MySQL", "API Integration", "SEO Optimization"],
+            "description": {
+                "en": "The official corporate website for PT Arsa Jaya Prima, paired with a robust marketing dashboard. Built using Laravel 12 and Tailwind CSS to deliver a fast and SEO-optimized platform.",
+                "id": "Situs web resmi perusahaan PT Arsa Jaya Prima, yang dipadukan dengan dashboard pemasaran yang tangguh. Dibangun menggunakan Laravel 12 dan Tailwind CSS untuk memberikan platform yang cepat dan dioptimalkan untuk SEO."
+            },
+            "goals": {
+                "en": "Establish a strong digital presence for the company while providing the marketing team with powerful tools to track campaigns and manage content dynamically.",
+                "id": "Membangun kehadiran digital yang kuat bagi perusahaan sekaligus menyediakan alat yang mumpuni bagi tim pemasaran untuk melacak kampanye dan mengelola konten secara dinamis."
+            }
         },
         {
             "image": "/images/work/total-indo-bangunusa.png",
+            "gallery": [
+                "/images/work/total-indo-bangunusa.png",
+                "/images/work/total-indo-bangunusa.png",
+                "/images/work/total-indo-bangunusa.png",
+                "/images/work/total-indo-bangunusa.png"
+            ],
             "title": { "en": "Management Information System", "id": "Sistem Informasi Manajemen" },
             "client": "PT Total Indo Bangunusa",
             "slug": "https://github.com/dhandynuzirwan/total-indo-bangunusa",
-            "skills": ["Laravel", "Bootstrap", "MySQL"]
+            "skills": ["Laravel 12", "PHP 8.2", "Tailwind CSS", "MySQL"],
+            "description": {
+                "en": "A custom-built Management Information System (MIS) designed to handle the complex internal workflows, inventory tracking, and project management for a construction and building company.",
+                "id": "Sistem Informasi Manajemen (MIS) khusus yang dirancang untuk menangani alur kerja internal yang kompleks, pelacakan inventaris, dan manajemen proyek untuk perusahaan konstruksi dan bangunan."
+            },
+            "goals": {
+                "en": "Digitize manual operational workflows, ensure real-time inventory tracking, and generate automated performance reports to aid executive decision-making.",
+                "id": "Mendigitalkan alur kerja operasional manual, memastikan pelacakan inventaris secara real-time, dan menghasilkan laporan kinerja otomatis untuk membantu pengambilan keputusan tingkat eksekutif."
+            }
         },
         {
             "image": "/images/work/duta-madinna.png",
-            "title": { "en": "Website & Dashboard", "id": "Situs Web & Dashboard" },
+            "gallery": [
+                "/images/work/duta-madinna.png",
+                "/images/work/duta-madinna.png",
+                "/images/work/duta-madinna.png",
+                "/images/work/duta-madinna.png"
+            ],
+            "title": { "en": "Website Company Profile & Dashboard", "id": "Situs Web & Dashboard" },
             "client": "CV. Duta Madinna Kubah",
             "slug": "https://github.com/dhandynuzirwan/duta-madinna-kubah",
-            "skills": ["Next.js", "TypeScript", "Tailwind CSS"]
+            "skills": ["Laravel 11", "Bootstrap 5", "Vite.js", "MySQL", "PHP 8.2", "JavaScript"],
+            "description": {
+                "en": "A high-performance business website and administrative dashboard built with Laravel 11 and Vite.js, tailored for a company specializing in dome construction and manufacturing.",
+                "id": "Situs web profil perusahaan dan dashboard administratif yang dibangun menggunakan Laravel 11 dan Vite.js, disesuaikan khusus untuk perusahaan yang bergerak di bidang konstruksi dan manufaktur kubah."
+            },
+            "goals": {
+                "en": "Provide a fast, responsive public storefront while offering a seamless backend interface for content and project management.",
+                "id": "Menyediakan etalase publik yang cepat dan responsif, sekaligus menawarkan antarmuka backend yang mulus untuk manajemen konten dan proyek."
+            }
         },
         {
             "image": "/images/work/manna-kampus.png",
+            "gallery": [
+                "/images/work/manna-kampus.png",
+                "/images/work/manna-kampus.png",
+                "/images/work/manna-kampus.png",
+                "/images/work/manna-kampus.png"
+            ],
             "title": { "en": "Mobile App Design", "id": "Desain Aplikasi Seluler" },
             "client": "Manna Kampus",
             "slug": "https://www.behance.net/gallery/240601835/Manna-Kampus-Supermarket-Mobile-App-UIUX",
-            "skills": ["Figma", "User Research", "Wireframing"]
+            "skills": ["Figma", "User Research", "Wireframing", "Design Thinking", "Prototyping"],
+            "description": {
+                "en": "A complete UI/UX overhaul and mobile app design concept for Manna Kampus Supermarket, focusing on improving the e-grocery shopping experience and user retention.",
+                "id": "Perombakan penuh UI/UX dan konsep desain aplikasi seluler untuk Supermarket Manna Kampus, dengan fokus pada peningkatan pengalaman belanja bahan makanan elektronik (e-grocery) dan retensi pengguna."
+            },
+            "goals": {
+                "en": "Modernize the visual identity, simplify the checkout flow, and introduce gamification elements to increase user engagement and daily active users.",
+                "id": "Memodernisasi identitas visual, menyederhanakan alur pembayaran, dan memperkenalkan elemen gamifikasi untuk meningkatkan keterlibatan pengguna serta jumlah pengguna aktif harian."
+            }
         }
     ]
 }
