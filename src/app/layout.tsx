@@ -6,6 +6,7 @@ import Footer from "./components/layout/footer";
 import { LanguageProvider } from "./context/LanguageContext";
 
 import { ThemeProvider } from "./context/ThemeProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
             <Footer/>
           </LanguageProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
